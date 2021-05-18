@@ -1,0 +1,353 @@
+.input-cardbody{
+    margin-top: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.input-cardtext {
+    text-align: left;
+    font-weight: 600;
+    font-size: medium;
+    color: #555;
+}
+.input-cardtab a:link,
+.input-cardtab a:visited
+ {
+    color: #9b9a9a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 600;
+    transition: border-bottom 0.2s;
+    padding-left: initial;
+}
+.input-cardtab a:hover,
+.input-cardtab a:active
+{
+    border-bottom: 1px solid #3682db;
+}
+
+.input-profileimage {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+}
+.inputbox-cardtext {
+    font-size: small;
+    font-weight: 800;
+    color: gray;
+    padding-top: 5px;
+    line-height: 24px;
+    min-height: 70px;
+}
+.fromto-input{
+    background-color: white !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+    border-bottom: 0px !important;
+}
+.input-buttonpost {
+    margin-top: 3%;
+}
+.nav-attach {
+    padding-left: 10px;
+    font-size: large;
+    font-weight: 400;
+    color: gray;
+}
+.input-buttontext {
+    border : 0px !important ;
+    font-size: small;
+    font-weight: 900;
+}
+.button-post {
+    position: absolute;
+    float: right;
+    right: 10px;
+}
+
+/* input::-webkit-clear-button,
+input::-webkit-inner-spin-button
+{
+    display: none;
+} */
+input.form-control {
+    font-size: small;
+    font-weight: 900;
+}
+.input-travellingspaces{
+    margin-right: 20px !important;
+}
+
+
+Skip to content
+Features
+Business
+Explore
+Marketplace
+Pricing
+
+Search
+
+Sign in or Sign up
+3 21 584 arqex/react-datetime
+forked from YouCanBookMe/react-datetime
+ Code  Pull requests 0  Projects 0  Insights
+Join GitHub today
+GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.
+
+react-datetime/css/react-datetime.css
+8055e63  on Feb 7, 2017
+@simeg simeg Add info on local development to README
+@arqex @simeg @idoo @davidfurlong
+     
+214 lines (194 sloc)  3.68 KB
+/*!
+ * https://github.com/YouCanBookMe/react-datetime
+ */
+
+.rdt {
+  position: relative;
+}
+.rdtPicker {
+  display: none;
+  position: absolute;
+  width: 250px;
+  padding: 4px;
+  margin-top: 1px;
+  z-index: 99999 !important;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,.1);
+  border: 1px solid #f9f9f9;
+}
+.rdtOpen .rdtPicker {
+  display: block;
+}
+.rdtStatic .rdtPicker {
+  box-shadow: none;
+  position: static;
+}
+
+.rdtPicker .rdtTimeToggle {
+  text-align: center;
+}
+
+.rdtPicker table {
+  width: 100%;
+  margin: 0;
+}
+.rdtPicker td,
+.rdtPicker th {
+  text-align: center;
+  height: 28px;
+}
+.rdtPicker td {
+  cursor: pointer;
+}
+.rdtPicker td.rdtDay:hover,
+.rdtPicker td.rdtHour:hover,
+.rdtPicker td.rdtMinute:hover,
+.rdtPicker td.rdtSecond:hover,
+.rdtPicker .rdtTimeToggle:hover {
+  background: #eeeeee;
+  cursor: pointer;
+}
+.rdtPicker td.rdtOld,
+.rdtPicker td.rdtNew {
+  color: #999999;
+}
+.rdtPicker td.rdtToday {
+  position: relative;
+}
+.rdtPicker td.rdtToday:before {
+  content: '';
+  display: inline-block;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid #428bca;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
+  background-color: #428bca;
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.rdtPicker td.rdtActive.rdtToday:before {
+  border-bottom-color: #fff;
+}
+.rdtPicker td.rdtDisabled,
+.rdtPicker td.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+.rdtPicker td span.rdtOld {
+  color: #999999;
+}
+.rdtPicker td span.rdtDisabled,
+.rdtPicker td span.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+.rdtPicker th {
+  border-bottom: 1px solid #f9f9f9;
+}
+.rdtPicker .dow {
+  width: 14.2857%;
+  border-bottom: none;
+}
+.rdtPicker th.rdtSwitch {
+  width: 100px;
+}
+.rdtPicker th.rdtNext,
+.rdtPicker th.rdtPrev {
+  font-size: 21px;
+  vertical-align: top;
+}
+
+.rdtPrev span,
+.rdtNext span {
+  display: block;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.rdtPicker th.rdtDisabled,
+.rdtPicker th.rdtDisabled:hover {
+  background: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+.rdtPicker thead tr:first-child th {
+  cursor: pointer;
+}
+.rdtPicker thead tr:first-child th:hover {
+  background: #eeeeee;
+}
+
+.rdtPicker tfoot {
+  border-top: 1px solid #f9f9f9;
+}
+
+.rdtPicker button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.rdtPicker button:hover {
+  background-color: #eee;
+}
+
+.rdtPicker thead button {
+  width: 100%;
+  height: 100%;
+}
+
+td.rdtMonth,
+td.rdtYear {
+  height: 50px;
+  width: 25%;
+  cursor: pointer;
+}
+td.rdtMonth:hover,
+td.rdtYear:hover {
+  background: #eee;
+}
+
+.rdtCounters {
+  display: inline-block;
+}
+
+.rdtCounters > div {
+  float: left;
+}
+
+.rdtCounter {
+  height: 100px;
+}
+
+.rdtCounter {
+  width: 40px;
+}
+
+.rdtCounterSeparator {
+  line-height: 100px;
+}
+
+.rdtCounter .rdtBtn {
+  height: 40%;
+  line-height: 40px;
+  cursor: pointer;
+  display: block;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+.rdtCounter .rdtBtn:hover {
+  background: #eee;
+}
+.rdtCounter .rdtCount {
+  height: 20%;
+  font-size: 1.2em;
+}
+
+.rdtMilli {
+  vertical-align: middle;
+  padding-left: 8px;
+  width: 48px;
+}
+
+.rdtMilli input {
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 37px;
+}
+
+.textarea-content {
+  font-size: small !important;
+  font-weight: 400 !important;
+  color:gray !important;
+  border: 0px !important;
+}
+.attach-Image{
+  font-size: medium !important;
+  font-weight: 500 !important;
+}
+.amount-input {
+  margin-left: 5px !important;
+  margin-bottom: 9px !important;
+  width: 105px !important;
+}
+.profile-attach {
+  margin-top: -5px;
+}
+.FromList-input:hover {
+  cursor: pointer;
+  background-color: #33CCFF;
+}
+
+.inputcustom-select {
+    margin-left: 3px;
+    width: 82px;
+    height: 25px;
+    font-size: small;
+    font-weight: 800;
+    color: gray;
+    margin-top: 0px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.select-currency {
+  margin-top: -5px;
+}

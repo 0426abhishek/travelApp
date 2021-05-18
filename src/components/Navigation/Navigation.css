@@ -1,0 +1,20 @@
+.badgeNotification {
+    position: absolute;
+    top: 20px;
+    margin-left: 10px;
+    font-size: xx-small !important;
+    font-weight: 900 !important;
+    cursor: pointer;
+}
+
+.poplist-view {
+    font-size: small !important;
+    font-weight: 700  !important;
+}
+.popsubList-view {
+    font-size: small !important;
+    font-weight: 400 !important;
+}
+.otp_list {
+    font-weight: 700;
+}

@@ -1,0 +1,19 @@
+.feed-cardheader {
+    margin-top: 10px !important;
+    border-bottom-left-radius: 0px!important;
+    border-bottom-right-radius: 0px!important;
+}
+.feed-cardheadertitle {
+    background-color: #3682db;
+    padding: 10px;
+    color: white;
+    font-size: large;
+    font-weight: 400;
+}
+.feedheader-button {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    margin-top: 2px;
+    margin-right: 10px;   
+}

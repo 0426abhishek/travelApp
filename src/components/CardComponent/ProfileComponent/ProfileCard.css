@@ -1,0 +1,73 @@
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css');
+.profile-card {
+    margin-top: 10px;
+}
+.profile-edit{
+    float: right;
+    font-size: small;
+    color: white;
+}
+
+.profile-header {
+    background-color: #3682db !important;
+    font-size: small;
+    color: white;
+}
+.profile-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: 500;
+}
+.profile-title {
+    text-align: center;
+}
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 40% !important;
+    border-radius: 50% !important;
+}
+.profile-tab {
+    font-weight: 900;
+    font-size: medium;
+    color: #555;
+    cursor: pointer;
+}
+
+.profile-pencil{
+    margin-top: 10px;
+    color: #555;
+    margin-right: 10px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.modal-headermsg{
+    font-size: large !important;
+    font-weight: 600 !important;
+    color: #3682db !important;
+}
+
+.input-profiletext{
+    width: 47% !important;
+}
+.profile-imagecorner{
+   border-radius: 50%!important;
+}
+.top-right {
+    position: absolute;
+    top: 35%;
+    right: 9%;
+}
+
+.profile-inline li:hover{
+    background:#d3d3d3 !important;
+    cursor: pointer;
+}
+.kycCurrency-country {
+    font-size: small !important;
+    font-weight: 600 !important;
+}
